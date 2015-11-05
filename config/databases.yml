@@ -5,3 +5,10 @@ all:
       dsn: 'pgsql:host=localhost;dbname=jobeet'
       username: rolo
       password: rolo123
+test:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'pgsql:host=localhost;dbname=jobeet_test'
+      username: rolo
+      password: rolo123
